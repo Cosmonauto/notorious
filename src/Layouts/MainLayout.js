@@ -157,7 +157,7 @@ export default function MainLayout(props) {
                             to="/"
                         >
                             <Typography variant="h6" noWrap>
-                                Candy Shop
+                                Candy Shopksdfklsdflksdflk
                             </Typography>
                         </NavLink>
 
