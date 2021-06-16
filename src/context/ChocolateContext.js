@@ -74,6 +74,7 @@ export default function ChocolateContextProvider(props) {
                 `${URL}/products?_start=${page * 4}&_end=${4 * (page + 1)}`
             );
             const products = response.data;
+            console.log(products);
             const total = response.headers["x-total-count"];
 
             dispatch({
@@ -91,6 +92,7 @@ export default function ChocolateContextProvider(props) {
     const fetchSearchProducts = async (value) => {
         const response = await axios.get(`${URL}/products/?q=${value}`);
         const products = response.data;
+        console.log(products);
         const total = response.headers["x-total-count"];
 
         dispatch({

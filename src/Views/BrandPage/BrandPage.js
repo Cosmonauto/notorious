@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router";
-import HeroSlider from "../../components/HeroSlider";
+
 import ProductsList from "../../components/ProductsList";
 import { chocolateContext } from "../../context/ChocolateContext";
 import MainLayout from "../../Layouts/MainLayout";
