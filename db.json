@@ -1,0 +1,122 @@
+{
+    "brands": [
+        {
+            "id": 1,
+            "title": "Mars",
+            "logo": "https://i.pinimg.com/originals/5d/7f/64/5d7f64538ecf015eb5408f75034ba072.gif"
+        },
+        {
+            "id": 2,
+            "title": "Ferrero Rosher",
+            "logo": "https://1000logos.net/wp-content/uploads/2020/09/Ferrero-Rocher-Logo.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Mondelez International",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Mondelez_international_2012_logo.svg"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "brand": 1,
+            "title": "Twix",
+            "price": "30",
+            "description": "TWIX® is an awesome combination of crunchy cookie, delicious caramel and creamy chocolate. Perfect for sharing.",
+            "images": [
+                "https://www.twix.com/cdn-cgi/image/width=600,height=600,f=auto,quality=75/sites/g/files/fnmzdf236/files/2021-03/wazrsinnljydmvimjwve.png",
+                "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/ca46e3d28b404b3f9d2fac84013701ea_9366/Krossovki_dlya_bega_Ultraboost_21_Primeblue_sinij_FX7729_011_hover_standard.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "brand": 1,
+            "title": "Snickers",
+            "price": "30",
+            "description": "Packed with roasted peanuts, nougat, caramel and milk chocolate. SNICKERS® Brand handles your hunger, so you handle the things in life that aren't related to hunger at all.",
+            "images": [
+                "https://images-na.ssl-images-amazon.com/images/I/61XSrUOrZzL._SL1000_.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "brand": 1,
+            "title": "M&M's",
+            "price": "30",
+            "description": "These bite-sized chocolate pieces are the perfect Easter egg candy fillings. There are endless ways to brighten up your candy spread with pastel colored M&M'S Chocolate candies. ",
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0015/0611/5642/products/mm_milk_50g.jpg?v=1532579272"
+            ]
+        },
+        {
+            "title": "Maltesers",
+            "brand": 1,
+            "price": "60",
+            "description": "Maltesers® — the lighter way to enjoy chocolate. These crisp honeycombed centers covered in delicious milk chocolate were first introduced in the U.K. in 1936.",
+            "images": [
+                "https://images-na.ssl-images-amazon.com/images/I/61LEV-78ElL._SL1000_.jpg"
+            ],
+            "id": 5
+        },
+        {
+            "id": 8,
+            "brand": 1,
+            "title": "Dove",
+            "price": "100",
+            "description": "Made with the best cacao, DOVE® silky-smooth milk chocolate is an indulgent treat, whether savored a piece at a time or melted into delicious desserts.",
+            "images": [
+                "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4ad6dc35-d1ab-466f-a25e-e1d4624dae58.jpg"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Ferrero Rosher",
+            "price": 300,
+            "brand": 2,
+            "description": "Each Ferrero Rocher® fine hazelnut chocolate is made with passion and commitment to create an irresistible taste experience. Discover more about what makes Ferrero Rocher® so unique.",
+            "images": [
+                "https://s.wine.style/images_gen/931/93153/0_0_orig.jpg"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Raffaello",
+            "price": 300,
+            "brand": 2,
+            "description": "White and refined in appearance, Raffaello surprises with a delicate combination of different layers: a crunchy white almond, surrounded by velvety smooth cream in a crispy wafer shell, covered with coconut flakes. Raffaello - a seasonless treat for all senses.",
+            "images": [
+                "https://www.luluhypermarket.com/medias/363499-01.jpg-515Wx515H?context=bWFzdGVyfGltYWdlc3w3NzY5MnxpbWFnZS9qcGVnfGhkNy9oODgvMTA2NDI5NzMwMzI0NzgvMzYzNDk5LTAxLmpwZ181MTVXeDUxNUh8NGUzMzliZTYwZWUzY2YxYjY2NGM2YTQxZDdmOGM4ODc4YjE4OTNiZDFiNWM4MjY2ODg3YmJlMDgyNDRiOTE1Zg"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Kinder Chocolate",
+            "price": 70,
+            "brand": 2,
+            "description": "Kinder Chocolate has encouraged responsible consumption since 1968 with individually wrapped portions. Kinder Chocolate different bar sizes are perfect for little and bigger hands.",
+            "images": [
+                "https://images.shopdutyfree.com/image/upload/v1584691674/030/001/001/8000500051795/8000500051795_1_default_default.jpg"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Milka",
+            "price": 70,
+            "brand": 3,
+            "description": "Milka is one of the world’s most beloved – and recognizable – chocolate brands. Made with Alpine milk, Milka has been delighting consumers in Germany and beyond since 1901. The brand, with its unique lilac-colored packaging and Lila, the Milka cow, have a dedicated “cow-munity” of adoring fans around the world!",
+            "images": [
+                "http://cdn.shopify.com/s/files/1/0413/1107/6505/products/07040550-5608ae-1650x1650.jpg?v=1592850335"
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Toblerone",
+            "price": 70,
+            "brand": 3,
+            "description": "Toblerone is a Swiss chocolate bar made with honey and almond nougat. Created in 1908 by Theodor Tobler, Toblerone is now available around the world and is instantly recognized thanks to its unique chocolate peak shape and unmistakable packs.",
+            "images": [
+                "https://www.cashgolosinas.com/2770/super-toblerone-giant-chocolate-400grs.jpg"
+            ]
+        }
+    ]
+}
