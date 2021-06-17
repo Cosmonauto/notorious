@@ -11,49 +11,54 @@ import { useConfirm } from "material-ui-confirm";
 import { notifySuccess } from "../../helpers/notifiers";
 
 export default function ProductDetailPage() {
-  const { fetchProductDetail, productDetail, deleteProduct } =
-    useContext(chocolateContext);
 
-  const { id } = useParams();
-  const confirm = useConfirm();
-  const history = useHistory();
+    const { fetchProductDetail, productDetail, deleteProduct } =
+        useContext(chocolateContext);
 
-  useEffect(() => {
-    fetchProductDetail(id);
-  }, [id]);
+    const { id } = useParams();
+    const confirm = useConfirm();
+    const history = useHistory();
 
-  const handleProductDelete = () => {
-    confirm({
-      description: "Удалить данный товар?",
-    }).then(() => {
-      deleteProduct(id).then(() => {
-        notifySuccess("Товар был успешно удален!");
-        history.push("/");
-      });
-    });
-  };
+    useEffect(() => {
+        fetchProductDetail(id);
+    }, [id]);
 
-  return (
-    <MainLayout>
-      {productDetail && (
-        <div className={classes.container}>
-          <ProductSlider images={productDetail.images} />
+    const handleProductDelete = () => {
+        confirm({
+            description: 'Удалить данный товар?',
+        }).then(() => {
+            deleteProduct(id).then(() => {
+                notifySuccess('Товар был успешно удален!');
+                history.push('/');
+            });
+        });
+    };
 
-          <div>
-            <IconButton onClick={handleProductDelete}>
-              <DeleteIcon />
-            </IconButton>
+    return (
+        <MainLayout>
+            {productDetail && (
+                <div className={classes.container}>
+                    <ProductSlider images={productDetail.images} />
 
-            <IconButton onClick={() => history.push(`/products/${id}/update`)}>
-              <EditIcon />
-            </IconButton>
-          </div>
+                    <div>
+                        <IconButton onClick={handleProductDelete}>
+                            <DeleteIcon />
+                        </IconButton>
 
-          <Typography variant="h3">{productDetail.title}</Typography>
-          <Typography variant="h3">{productDetail.price}</Typography>
-          <Typography variant="body1">{productDetail.description}</Typography>
-        </div>
-      )}
-    </MainLayout>
-  );
-}
+                        <IconButton onClick={() => history.push(`/products/${id}/update`)}>
+                            <EditIcon />
+                        </IconButton>
+                    </div>
+
+                    <Typography variant="h3">{productDetail.title}</Typography>
+                    <Typography variant="h3">{productDetail.price}</Typography>
+                    <Typography variant="body1">{productDetail.description}</Typography>
+                </div>
+            )}
+        </MainLayout>
+
+
+
+
+    );
+

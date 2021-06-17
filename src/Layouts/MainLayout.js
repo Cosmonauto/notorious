@@ -22,6 +22,7 @@ import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { chocolateContext } from "../context/ChocolateContext";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 const drawerWidth = 240;
 
