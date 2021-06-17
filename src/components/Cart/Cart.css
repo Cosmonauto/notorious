@@ -1,0 +1,12 @@
+.btn {
+border-radius: 10px !important;
+background-color: rgb(144, 71, 204) !important;
+}
+
+.btn1 {
+    background-color: rgb(144, 71, 204);
+    color: black;
+    width: 60px;
+    border-radius: 10px;
+}
+

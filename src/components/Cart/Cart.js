@@ -11,6 +11,7 @@ import { Typography } from "@material-ui/core";
 import { calcTotalPrice } from "../../helpers/calcPrice";
 import { chocolateContext } from "../../context/ChocolateContext";
 import { Link } from "react-router-dom";
+import "../../components/Cart/Cart.css";
 
 const useStyles = makeStyles({
     table: {
@@ -33,7 +34,7 @@ export default function Cart() {
     return (
         <>
             <Link to="/">
-                <button>Home</button>
+                <button className="btn">Home</button>
             </Link>
             <TableContainer component={Paper} className={classes.paper}>
                 <Table className={classes.table} aria-label="spanning table">
@@ -58,18 +59,27 @@ export default function Cart() {
                                                 alt=""
                                             />{" "}
                                         </TableCell>
-                                        <TableCell align="right">{elem.item.title}</TableCell>
-                                        <TableCell align="right">{elem.item.price}</TableCell>
+                                        <TableCell align="right">
+                                            {elem.item.title}
+                                        </TableCell>
+                                        <TableCell align="right">
+                                            {elem.item.price}
+                                        </TableCell>
                                         <TableCell align="right">
                                             <input
                                                 type="number"
                                                 value={elem.count}
                                                 onChange={(e) =>
-                                                    changeProductCount(e.target.value, elem.item.id)
+                                                    changeProductCount(
+                                                        e.target.value,
+                                                        elem.item.id
+                                                    )
                                                 }
                                             />
                                         </TableCell>
-                                        <TableCell align="right">{elem.subPrice}</TableCell>
+                                        <TableCell align="right">
+                                            {elem.subPrice}
+                                        </TableCell>
                                     </TableRow>
                                 ))}
                             </>
@@ -89,6 +99,9 @@ export default function Cart() {
                                 </TableCell>
                             ) : null}
                         </TableRow>
+                        <Link to="/checkout">
+                            <button className="btn1">Pay</button>
+                        </Link>
                     </TableBody>
                 </Table>
             </TableContainer>
