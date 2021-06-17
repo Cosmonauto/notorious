@@ -22,6 +22,7 @@ import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import { chocolateContext } from "../context/ChocolateContext";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 const drawerWidth = 240;
 
@@ -144,12 +145,6 @@ export default function MainLayout(props) {
                         <MenuIcon />
                     </IconButton>
 
-                    <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
-                        <IconButton color="inherit">
-                            <ShoppingCartIcon />
-                        </IconButton>
-                    </Link>
-
                     <div className={classes.navContent}>
                         <NavLink
                             className={classes.logo}
@@ -162,6 +157,16 @@ export default function MainLayout(props) {
                         </NavLink>
 
                         <SearchBar />
+                        <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+                            <IconButton color="inherit">
+                                <ShoppingCartIcon />
+                            </IconButton>
+                        </Link>
+                        <Link to="/signup" style={{ textDecoration: "none", color: "white" }}>
+                            <IconButton color="inherit">
+                                <AccountBoxIcon />
+                            </IconButton>
+                        </Link>
                     </div>
                 </Toolbar>
             </AppBar>

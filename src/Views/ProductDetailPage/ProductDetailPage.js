@@ -55,5 +55,9 @@ export default function ProductDetailPage() {
                 </div>
             )}
         </MainLayout>
+
+
+
+
     );
 }

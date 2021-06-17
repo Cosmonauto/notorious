@@ -7,27 +7,36 @@ import ProductDetailPage from "./Views/ProductDetailPage/ProductDetailPage";
 import ProductUpdatePage from "./Views/ProductUpdatePage/ProductUpdatePage";
 import SearchResultPage from "./Views/SearchResultPage/SearchResultPage";
 import Cart from "./components/Cart/Cart";
+import Signup from "./components/authentication/Signup/Signup";
+import { AuthProvider } from "./context/AuthContext";
+import Login from "./components/authentication/Login/Login";
+import ForgotPassword from "./components/authentication/ForgotPassword/ForgotPassword";
 
 export default function Routes() {
     return (
         <Router>
-            <Switch>
-                <Route path="/" component={MainPage} exact />
-                <Route path="/products/create" component={ProductCreatePage} exact />
-                <Route
-                    path="/products/search/:searchValue"
-                    component={SearchResultPage}
-                    exact
-                />
-                <Route path="/products/:id" component={ProductDetailPage} exact />
-                <Route
-                    path="/products/:id/update/"
-                    component={ProductUpdatePage}
-                    exact
-                />
-                <Route path="/brand/:id" component={BrandPage} exact />
-                <Route path="/cart" component={Cart} exact />
-            </Switch>
+            <AuthProvider>
+                <Switch>
+                    <Route path="/signup" component={Signup} exact />
+                    <Route path="/login" component={Login} />
+                    <Route path="/forgot-password" component={ForgotPassword} />
+                    <Route path="/" component={MainPage} exact />
+                    <Route path="/products/create" component={ProductCreatePage} exact />
+                    <Route
+                        path="/products/search/:searchValue"
+                        component={SearchResultPage}
+                        exact
+                    />
+                    <Route path="/products/:id" component={ProductDetailPage} exact />
+                    <Route
+                        path="/products/:id/update/"
+                        component={ProductUpdatePage}
+                        exact
+                    />
+                    <Route path="/brand/:id" component={BrandPage} exact />
+                    <Route path="/cart" component={Cart} exact />
+                </Switch>
+            </AuthProvider>
         </Router>
     );
 }

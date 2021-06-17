@@ -107,6 +107,7 @@ export default function ChocolateContextProvider(props) {
     const fetchProductDetail = async (id) => {
         const response = await axios.get(`${URL}/products/${id}`);
         const productDetail = response.data;
+        console.log(productDetail);
         dispatch({
             type: "SET_PRODUCT_DETAIL",
             payload: productDetail,
