@@ -12,66 +12,68 @@ import { useHistory } from "react-router";
 import { chocolateContext } from "../../context/ChocolateContext";
 
 const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
-    media: {
-        height: 140,
-    },
-    description: {
-        height: 100,
-        marginTop: 20,
-    },
+  root: {
+    maxWidth: 345,
+    backgroundImage: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+    borderRadius: "10px",
+  },
+  media: {
+    height: 140,
+  },
+  description: {
+    height: 100,
+    marginTop: 20,
+  },
 });
 
 export default function ProductItem({ data }) {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    const { title, images, price, description, id } = data;
-    const { addProductToCart } = useContext(chocolateContext);
-    const history = useHistory();
+  const { title, images, price, description, id } = data;
+  const { addProductToCart } = useContext(chocolateContext);
+  const history = useHistory();
 
-    return (
-        <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia className={classes.media} image={images[0]} title={title} />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        <Truncate lines={2} ellipsis={"..."}>
-                            {title}
-                        </Truncate>
-                    </Typography>
+  return (
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia className={classes.media} image={images[0]} title={title} />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            <Truncate lines={2} ellipsis={"..."}>
+              {title}
+            </Truncate>
+          </Typography>
 
-                    <Typography variant="h5">{price} руб</Typography>
+          <Typography variant="h5">{price} $</Typography>
 
-                    <Typography
-                        className={classes.description}
-                        variant="body2"
-                        color="textSecondary"
-                        component="p"
-                    >
-                        <Truncate lines={3} ellipsis={"..."}>
-                            {description}
-                        </Truncate>
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button
-                    onClick={() => addProductToCart(data)}
-                    size="small"
-                    color="primary"
-                >
-                    Cart
-                </Button>
-                <Button
-                    onClick={() => history.push(`/products/${id}`)}
-                    size="small"
-                    color="primary"
-                >
-                    Далее
-                </Button>
-            </CardActions>
-        </Card>
-    );
+          <Typography
+            className={classes.description}
+            variant="body2"
+            color="textSecondary"
+            component="p"
+          >
+            <Truncate lines={3} ellipsis={"..."}>
+              {description}
+            </Truncate>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button
+          onClick={() => addProductToCart(data)}
+          size="small"
+          color="primary"
+        >
+          Cart
+        </Button>
+        <Button
+          onClick={() => history.push(`/products/${id}`)}
+          size="small"
+          color="primary"
+        >
+          Next
+        </Button>
+      </CardActions>
+    </Card>
+  );
 }
