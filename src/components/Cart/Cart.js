@@ -89,6 +89,9 @@ export default function Cart() {
                 </TableCell>
               ) : null}
             </TableRow>
+            <Link to="/checkout">
+              <button>Pay</button>
+            </Link>
           </TableBody>
         </Table>
       </TableContainer>

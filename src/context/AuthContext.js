@@ -53,7 +53,7 @@ export function AuthProvider({ children }) {
         updateEmail,
         updatePassword
     }
-
+    console.log(!loading)
     return (
         <AuthContext.Provider value={value}>
             {!loading && children}

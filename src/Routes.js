@@ -11,6 +11,9 @@ import Signup from "./components/authentication/Signup/Signup";
 import { AuthProvider } from "./context/AuthContext";
 import Login from "./components/authentication/Login/Login";
 import ForgotPassword from "./components/authentication/ForgotPassword/ForgotPassword";
+import FormPage from "./components/FormOrder/FormPage"
+import PaymentForm from "./components/CreditCard/PaymentForm"
+
 
 export default function Routes() {
     return (
@@ -35,6 +38,11 @@ export default function Routes() {
                     />
                     <Route path="/brand/:id" component={BrandPage} exact />
                     <Route path="/cart" component={Cart} exact />
+                    <Route path="/checkout" component={FormPage} exact />
+                    <Route path="/payment" component={PaymentForm} exact />
+
+                    import FormPage from "./components/FormOrder/FormPage";
+                    import PaymentForm from "./components/CreditCard/PaymentForm";
                 </Switch>
             </AuthProvider>
         </Router>
