@@ -13,85 +13,85 @@ import { chocolateContext } from "../../context/ChocolateContext";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
-    table: {
-        minWidth: 700,
-    },
-    paper: {
-        maxWidth: 1000,
-        margin: "40px auto",
-    },
+  table: {
+    minWidth: 700,
+  },
+  paper: {
+    maxWidth: 1000,
+    margin: "40px auto",
+  },
 });
 
 export default function Cart() {
-    const classes = useStyles();
-    const { cart, getCart, changeProductCount } = useContext(chocolateContext);
+  const classes = useStyles();
+  const { cart, getCart, changeProductCount } = useContext(chocolateContext);
 
-    useEffect(() => {
-        getCart();
-    }, []);
+  useEffect(() => {
+    getCart();
+  }, []);
 
-    return (
-        <>
-            <Link to="/">
-                <button>Home</button>
-            </Link>
-            <TableContainer component={Paper} className={classes.paper}>
-                <Table className={classes.table} aria-label="spanning table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Image</TableCell>
-                            <TableCell align="right">Title</TableCell>
-                            <TableCell align="right">Price</TableCell>
-                            <TableCell align="right">Count</TableCell>
-                            <TableCell align="right">SubPrice</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {cart.products ? (
-                            <>
-                                {cart.products.map((elem) => (
-                                    <TableRow key={elem.item.id}>
-                                        <TableCell>
-                                            <img
-                                                style={{ width: "50px" }}
-                                                src={elem.item.images[0]}
-                                                alt=""
-                                            />{" "}
-                                        </TableCell>
-                                        <TableCell align="right">{elem.item.title}</TableCell>
-                                        <TableCell align="right">{elem.item.price}</TableCell>
-                                        <TableCell align="right">
-                                            <input
-                                                type="number"
-                                                value={elem.count}
-                                                onChange={(e) =>
-                                                    changeProductCount(e.target.value, elem.item.id)
-                                                }
-                                            />
-                                        </TableCell>
-                                        <TableCell align="right">{elem.subPrice}</TableCell>
-                                    </TableRow>
-                                ))}
-                            </>
-                        ) : null}
+  return (
+    <>
+      <Link to="/">
+        <button>Home</button>
+      </Link>
+      <TableContainer component={Paper} className={classes.paper}>
+        <Table className={classes.table} aria-label="spanning table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Image</TableCell>
+              <TableCell align="right">Title</TableCell>
+              <TableCell align="right">Price</TableCell>
+              <TableCell align="right">Count</TableCell>
+              <TableCell align="right">SubPrice</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {cart.products ? (
+              <>
+                {cart.products.map((elem) => (
+                  <TableRow key={elem.item.id}>
+                    <TableCell>
+                      <img
+                        style={{ width: "50px" }}
+                        src={elem.item.images[0]}
+                        alt=""
+                      />{" "}
+                    </TableCell>
+                    <TableCell align="right">{elem.item.title}</TableCell>
+                    <TableCell align="right">{elem.item.price}</TableCell>
+                    <TableCell align="right">
+                      <input
+                        type="number"
+                        value={elem.count}
+                        onChange={(e) =>
+                          changeProductCount(e.target.value, elem.item.id)
+                        }
+                      />
+                    </TableCell>
+                    <TableCell align="right">{elem.subPrice}</TableCell>
+                  </TableRow>
+                ))}
+              </>
+            ) : null}
 
-                        <TableRow>
-                            <TableCell rowSpan={3} />
-                            <TableCell colSpan={2}>
-                                <Typography variant="h5">Total: </Typography>{" "}
-                            </TableCell>
-                            {cart.products ? (
-                                <TableCell align="right">
-                                    <Typography variant="h5">
-                                        {" "}
-                                        {calcTotalPrice(cart.products)}{" "}
-                                    </Typography>{" "}
-                                </TableCell>
-                            ) : null}
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        </>
-    );
+            <TableRow>
+              <TableCell rowSpan={3} />
+              <TableCell colSpan={2}>
+                <Typography variant="h5">Total: </Typography>{" "}
+              </TableCell>
+              {cart.products ? (
+                <TableCell align="right">
+                  <Typography variant="h5">
+                    {" "}
+                    {calcTotalPrice(cart.products)}{" "}
+                  </Typography>{" "}
+                </TableCell>
+              ) : null}
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </>
+  );
 }
