@@ -11,6 +11,7 @@ import { Typography } from "@material-ui/core";
 import { calcTotalPrice } from "../../helpers/calcPrice";
 import { chocolateContext } from "../../context/ChocolateContext";
 import { Link } from "react-router-dom";
+import "../../components/Cart/cart.css";
 
 const useStyles = makeStyles({
   table: {
@@ -19,6 +20,7 @@ const useStyles = makeStyles({
   paper: {
     maxWidth: 1000,
     margin: "40px auto",
+    borderRadius: "10px",
   },
 });
 
@@ -32,10 +34,8 @@ export default function Cart() {
 
   return (
     <>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
       <TableContainer component={Paper} className={classes.paper}>
+        <h1 className="cartTitle">Cart </h1>
         <Table className={classes.table} aria-label="spanning table">
           <TableHead>
             <TableRow>
@@ -53,7 +53,7 @@ export default function Cart() {
                   <TableRow key={elem.item.id}>
                     <TableCell>
                       <img
-                        style={{ width: "50px" }}
+                        style={{ width: "90px" }}
                         src={elem.item.images[0]}
                         alt=""
                       />{" "}
@@ -90,7 +90,10 @@ export default function Cart() {
               ) : null}
             </TableRow>
             <Link to="/checkout">
-              <button>Pay</button>
+              <button className="btn1">Pay</button>
+            </Link>
+            <Link to="/">
+              <button className="btn2">Home</button>
             </Link>
           </TableBody>
         </Table>

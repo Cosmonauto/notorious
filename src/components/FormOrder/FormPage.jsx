@@ -8,7 +8,7 @@ const FormPage = () => {
     return (
         <>
             <div className="form-section">
-                <h2 style={{ textAlign: "center" }}>Форма оплаты заказа</h2>
+                <h2 style={{ textAlign: "center" }}>Payment Form</h2>
                 <Container>
                     <Form>
                         <Form.Row>
@@ -21,31 +21,33 @@ const FormPage = () => {
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridName">
-                                <Form.Label>Ваше ФИО</Form.Label>
+                                <Form.Label>Full Name</Form.Label>
                                 <Form.Control type="name" placeholder="Name" />
                             </Form.Group>
                         </Form.Row>
 
                         <Form.Group controlId="formGridAddress1">
-                            <Form.Label>Адрес доставки</Form.Label>
+                            <Form.Label>Address</Form.Label>
                             <Form.Control placeholder="1234 Main St" />
                         </Form.Group>
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridCity">
-                                <Form.Label>Город</Form.Label>
+                                <Form.Label>City</Form.Label>
                                 <Form.Control />
                             </Form.Group>
                         </Form.Row>
 
                         <Link to="/payment">
-                            <Button
+                            <Button className="btn3"
                                 variant="primary"
-                                style={{
-                                    width: "150px",
-                                    height: "40px",
-                                    borderRadius: "0",
-                                }}
+                                // style={{
+                                //     width: "150px",
+                                //     height: "40px",
+                                //     borderRadius: "10",
+                                //     borderStyle: "none",
+                                //     backgroundImage: "linear-gradient(to top, #9795f0 0%, #fbc8d4 100%)"
+                                // }}
                                 type="text"
                             >
                                 Submit
