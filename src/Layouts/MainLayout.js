@@ -29,6 +29,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
+        textDecoration: "none",
     },
     appBar: {
         transition: theme.transitions.create(["margin", "width"], {
@@ -149,17 +150,6 @@ export default function MainLayout(props) {
                         <MenuIcon />
                     </IconButton>
 
-                    <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
-                        <IconButton color="inherit">
-                            <ShoppingCartIcon />
-                        </IconButton>
-                    </Link>
-                    <Link to="/login" style={{ textDecoration: "none", color: "white" }}>
-                        <IconButton color="inherit">
-                            <AccountBoxIcon />
-                        </IconButton>
-                    </Link>
-
                     <div className={classes.navContent}>
                         <NavLink
                             className={classes.logo}
@@ -173,6 +163,16 @@ export default function MainLayout(props) {
 
                         <SearchBar />
                     </div>
+                    <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+                        <IconButton color="inherit">
+                            <ShoppingCartIcon />
+                        </IconButton>
+                    </Link>
+                    <Link to="/login" style={{ textDecoration: "none", color: "white" }}>
+                        <IconButton color="inherit">
+                            <AccountBoxIcon />
+                        </IconButton>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -196,7 +196,7 @@ export default function MainLayout(props) {
                 <Divider />
                 <List>
                     {brands.map((brand) => (
-                        <Link to={`/brand/${brand.id}`}>
+                        <Link to={`/brand/${brand.id}`} style={{ textDecoration: 'none' }}>
                             <ListItem button key={brand.id}>
                                 <ListItemText primary={brand.title} />
                                 <ListItemIcon>

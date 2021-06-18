@@ -1,213 +1,201 @@
 {
-    "brands": [
-        {
-            "id": 1,
-            "title": "Mars",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Mars_Logo.svg/1280px-Mars_Logo.svg.png"
-        },
-        {
-            "id": 2,
-            "title": "Ferrero Rosher",
-            "logo": "https://logos-download.com/wp-content/uploads/2016/06/Ferrero_Rocher_logo_logotype-700x457.png"
-        },
-        {
-            "id": 3,
-            "title": "Mondelez International",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Mondelez_international_2012_logo.svg"
-        },
-        {
-            "id": 4,
-            "title": "Hershey's",
-            "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2020/03/hersheys-logo.png"
-        },
-        {
-            "id": 5,
-            "title": "Dunkin Donuts",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Dunkin-donuts-1-logo-png-transparent.png"
-        }
-    ],
-    
-    "products": [
-        {
-            "id": 1,
-            "brand": 1,
-            "title": "Twix",
-            "price": "30",
-            "description": "TWIX® is an awesome combination of crunchy cookie, delicious caramel and creamy chocolate. Perfect for sharing.",
-            "images": [
-                "https://cdn.shopify.com/s/files/1/0368/9703/0283/products/69C71E49-4E62-4F4D-9A46-EFF19165C749.jpg?v=1605616478"
-            ]
-        },
-        {
-            "id": 3,
-            "brand": 1,
-            "title": "Snickers",
-            "price": "30",
-            "description": "Packed with roasted peanuts, nougat, caramel and milk chocolate. SNICKERS® Brand handles your hunger, so you handle the things in life that aren't related to hunger at all.",
-            "images": [
-                "https://images.heb.com/is/image/HEBGrocery/000121400"
-            ]
-        },
-        {
-            "id": 4,
-            "brand": 1,
-            "title": "M&M's",
-            "price": "30",
-            "description": "These bite-sized chocolate pieces are the perfect Easter egg candy fillings. There are endless ways to brighten up your candy spread with pastel colored M&M'S Chocolate candies. ",
-            "images": [
-                "https://www.wowtiongsan.com/shop/301-large_default/239.jpg"
-            ]
-        },
-        {
-            "title": "Maltesers",
-            "brand": 1,
-            "price": "60",
-            "description": "Maltesers® — the lighter way to enjoy chocolate. These crisp honeycombed centers covered in delicious milk chocolate were first introduced in the U.K. in 1936.",
-            "images": [
-                "https://media1.popsugar-assets.com/files/thumbor/EE647xdAiGkpZ4OCQpvzEfgMnOM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/02/11/896/n/28443503/cabe57f9e6ca1667_1/i/Maltesers.jpg"
-            ],
-            "id": 5
-        },
-        {
-            "id": 8,
-            "brand": 1,
-            "title": "Dove",
-            "price": "100",
-            "description": "Made with the best cacao, DOVE® silky-smooth milk chocolate is an indulgent treat, whether savored a piece at a time or melted into delicious desserts.",
-            "images": [
-                "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4ad6dc35-d1ab-466f-a25e-e1d4624dae58.jpg"
-            ]
-        },
-        {
-            "id": 13,
-            "title": "Ferrero Rosher",
-            "price": 300,
-            "brand": 2,
-            "description": "Each Ferrero Rocher® fine hazelnut chocolate is made with passion and commitment to create an irresistible taste experience. Discover more about what makes Ferrero Rocher® so unique.",
-            "images": [
-                "https://s.wine.style/images_gen/931/93153/0_0_orig.jpg"
-            ]
-        },
-        {
-            "id": 14,
-            "title": "Raffaello",
-            "price": 300,
-            "brand": 2,
-            "description": "White and refined in appearance, Raffaello surprises with a delicate combination of different layers: a crunchy white almond, surrounded by velvety smooth cream in a crispy wafer shell, covered with coconut flakes. Raffaello - a seasonless treat for all senses.",
-            "images": [
-                "https://www.luluhypermarket.com/medias/363499-01.jpg-515Wx515H?context=bWFzdGVyfGltYWdlc3w3NzY5MnxpbWFnZS9qcGVnfGhkNy9oODgvMTA2NDI5NzMwMzI0NzgvMzYzNDk5LTAxLmpwZ181MTVXeDUxNUh8NGUzMzliZTYwZWUzY2YxYjY2NGM2YTQxZDdmOGM4ODc4YjE4OTNiZDFiNWM4MjY2ODg3YmJlMDgyNDRiOTE1Zg"
-            ]
-        },
-        {
-            "id": 15,
-            "title": "Kinder Chocolate",
-            "price": 70,
-            "brand": 2,
-            "description": "Kinder Chocolate has encouraged responsible consumption since 1968 with individually wrapped portions. Kinder Chocolate different bar sizes are perfect for little and bigger hands.",
-            "images": [
-                "https://images.shopdutyfree.com/image/upload/v1584691674/030/001/001/8000500051795/8000500051795_1_default_default.jpg"
-            ]
-        },
-        {
-            "id": 16,
-            "title": "Milka",
-            "price": 70,
-            "brand": 3,
-            "description": "Milka is one of the world’s most beloved – and recognizable – chocolate brands. Made with Alpine milk, Milka has been delighting consumers in Germany and beyond since 1901. The brand, with its unique lilac-colored packaging and Lila, the Milka cow, have a dedicated “cow-munity” of adoring fans around the world!",
-            "images": [
-                "http://cdn.shopify.com/s/files/1/0413/1107/6505/products/07040550-5608ae-1650x1650.jpg?v=1592850335"
-            ]
-        },
-        {
-            "id": 17,
-            "title": "Toblerone",
-            "price": 70,
-            "brand": 3,
-            "description": "Toblerone is a Swiss chocolate bar made with honey and almond nougat. Created in 1908 by Theodor Tobler, Toblerone is now available around the world and is instantly recognized thanks to its unique chocolate peak shape and unmistakable packs.",
-            "images": [
-                "https://www.cashgolosinas.com/2770/super-toblerone-giant-chocolate-400grs.jpg"
-            ]
-        },
-        {
-            "id": 18,
-            "title": "HERSHEY'S KISSES",
-            "price": 70,
-            "brand": 4,
-            "description": "The iconic shape, festive foil wrappers and classic taste of HERSHEY’S KISSES Milk Chocolate make them perfect for sharing and savoring. Use HERSHEY’S KISSES Milk Chocolates in your favorite recipes, in your everyday candy dish and at your next party or family gathering.",
-            "images": [
-                "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2Fe0dc931740e04f65a64db1be09c5a532%2F0x0.jpg%3Ffit%3Dscale"
-            ]
-        },
-        {
-            "id": 19,
-            "title": "HERSHEY'S Milk Chocolate",
-            "price": 70,
-            "brand": 4,
-            "description": "There’s happy, and then there’s HERSHEY’S Happy. These HERSHEY’S Chocolate Bars makes life delicious. Unwrap a bar, break off a piece, savor and repeat.",
-            "images": [
-                "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00240_5_701_24000_097_Item_Front?fmt=png-alpha&hei=1500"
-            ]
-        },
-        
-        {
-            "id": 20,
-            "title": "REESE'S Cups",
-            "price": 70,
-            "brand": 4,
-            "description": "The classic combination of chocolate and peanut butter, REESE'S Peanut Butter Cups are the perfect companion for movies, sports and parties.",
-            "images": [
-                "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00440_9_701_44000_136_Item_Front?fmt=png-alpha&hei=3000"
-            ]
-        },
-        {
-            "id": 21,
-            "title": "KIT KAT®",
-            "price": 70,
-            "brand": 4,
-            "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
-            "images": [
-                "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00246_7_701_24600_070_Item_Front?fmt=png-alpha&hei=1500"
-            ]
-        },
-        {
-            "id": 22,
-            "title": "Strawberry",
-            "price": 70,
-            "brand": 5,
-            "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
-            "images": [
-                "https://thenovicechefblog.com/wp-content/uploads/2020/05/Air-Fryer-Donuts-1-720x720.jpeg"
-            ]
-        },
-        {
-            "id": 23,
-            "title": "Blueberry",
-            "price": 70,
-            "brand": 5,
-            "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
-            "images": [
-                "https://dunkindonutsmoscow.ru/upload/iblock/0e7/5.png"
-            ]
-        },
-        {
-            "id": 24,
-            "title": "Banana",
-            "price": 70,
-            "brand": 5,
-            "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
-            "images": [
-                "https://dunkindonutsmoscow.ru/upload/iblock/ab0/1.png"
-            ]
-        },
-        {
-            "id": 25,
-            "title": "Cherry",
-            "price": 70,
-            "brand": 5,
-            "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
-            "images": [
-                "https://dunkindonutsmoscow.ru/upload/iblock/3ff/SHell-Vishnya-2.0.png"
-            ]
-        }
-    ]
+  "brands": [
+    {
+      "id": 1,
+      "title": "Mars",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Mars_Logo.svg/1280px-Mars_Logo.svg.png"
+    },
+    {
+      "id": 2,
+      "title": "Ferrero Rosher",
+      "logo": "https://logos-download.com/wp-content/uploads/2016/06/Ferrero_Rocher_logo_logotype-700x457.png"
+    },
+    {
+      "id": 3,
+      "title": "Mondelez International",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Mondelez_international_2012_logo.svg"
+    },
+    {
+      "id": 4,
+      "title": "Hershey's",
+      "logo": "https://cdn.freelogovectors.net/wp-content/uploads/2020/03/hersheys-logo.png"
+    },
+    {
+      "id": 5,
+      "title": "Dunkin Donuts",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Dunkin-donuts-1-logo-png-transparent.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "brand": 1,
+      "title": "Twix",
+      "price": "30",
+      "description": "TWIX® is an awesome combination of crunchy cookie, delicious caramel and creamy chocolate. Perfect for sharing.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0368/9703/0283/products/69C71E49-4E62-4F4D-9A46-EFF19165C749.jpg?v=1605616478"
+      ]
+    },
+    {
+      "id": 4,
+      "brand": 1,
+      "title": "M&M's",
+      "price": "30",
+      "description": "These bite-sized chocolate pieces are the perfect Easter egg candy fillings. There are endless ways to brighten up your candy spread with pastel colored M&M'S Chocolate candies. ",
+      "images": [
+        "https://www.wowtiongsan.com/shop/301-large_default/239.jpg"
+      ]
+    },
+    {
+      "title": "Maltesers",
+      "brand": 1,
+      "price": "60",
+      "description": "Maltesers® — the lighter way to enjoy chocolate. These crisp honeycombed centers covered in delicious milk chocolate were first introduced in the U.K. in 1936.",
+      "images": [
+        "https://media1.popsugar-assets.com/files/thumbor/EE647xdAiGkpZ4OCQpvzEfgMnOM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/02/11/896/n/28443503/cabe57f9e6ca1667_1/i/Maltesers.jpg"
+      ],
+      "id": 5
+    },
+    {
+      "id": 8,
+      "brand": 1,
+      "title": "Dove",
+      "price": "100",
+      "description": "Made with the best cacao, DOVE® silky-smooth milk chocolate is an indulgent treat, whether savored a piece at a time or melted into delicious desserts.",
+      "images": [
+        "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4ad6dc35-d1ab-466f-a25e-e1d4624dae58.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Ferrero Rosher",
+      "price": 300,
+      "brand": 2,
+      "description": "Each Ferrero Rocher® fine hazelnut chocolate is made with passion and commitment to create an irresistible taste experience. Discover more about what makes Ferrero Rocher® so unique.",
+      "images": [
+        "https://s.wine.style/images_gen/931/93153/0_0_orig.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Raffaello",
+      "price": 300,
+      "brand": 2,
+      "description": "White and refined in appearance, Raffaello surprises with a delicate combination of different layers: a crunchy white almond, surrounded by velvety smooth cream in a crispy wafer shell, covered with coconut flakes. Raffaello - a seasonless treat for all senses.",
+      "images": [
+        "https://www.luluhypermarket.com/medias/363499-01.jpg-515Wx515H?context=bWFzdGVyfGltYWdlc3w3NzY5MnxpbWFnZS9qcGVnfGhkNy9oODgvMTA2NDI5NzMwMzI0NzgvMzYzNDk5LTAxLmpwZ181MTVXeDUxNUh8NGUzMzliZTYwZWUzY2YxYjY2NGM2YTQxZDdmOGM4ODc4YjE4OTNiZDFiNWM4MjY2ODg3YmJlMDgyNDRiOTE1Zg"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Kinder Chocolate",
+      "price": 70,
+      "brand": 2,
+      "description": "Kinder Chocolate has encouraged responsible consumption since 1968 with individually wrapped portions. Kinder Chocolate different bar sizes are perfect for little and bigger hands.",
+      "images": [
+        "https://images.shopdutyfree.com/image/upload/v1584691674/030/001/001/8000500051795/8000500051795_1_default_default.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Milka",
+      "price": 70,
+      "brand": 3,
+      "description": "Milka is one of the world’s most beloved – and recognizable – chocolate brands. Made with Alpine milk, Milka has been delighting consumers in Germany and beyond since 1901. The brand, with its unique lilac-colored packaging and Lila, the Milka cow, have a dedicated “cow-munity” of adoring fans around the world!",
+      "images": [
+        "http://cdn.shopify.com/s/files/1/0413/1107/6505/products/07040550-5608ae-1650x1650.jpg?v=1592850335"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Toblerone",
+      "price": 70,
+      "brand": 3,
+      "description": "Toblerone is a Swiss chocolate bar made with honey and almond nougat. Created in 1908 by Theodor Tobler, Toblerone is now available around the world and is instantly recognized thanks to its unique chocolate peak shape and unmistakable packs.",
+      "images": [
+        "https://www.cashgolosinas.com/2770/super-toblerone-giant-chocolate-400grs.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "HERSHEY'S KISSES",
+      "price": 70,
+      "brand": 4,
+      "description": "The iconic shape, festive foil wrappers and classic taste of HERSHEY’S KISSES Milk Chocolate make them perfect for sharing and savoring. Use HERSHEY’S KISSES Milk Chocolates in your favorite recipes, in your everyday candy dish and at your next party or family gathering.",
+      "images": [
+        "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2Fe0dc931740e04f65a64db1be09c5a532%2F0x0.jpg%3Ffit%3Dscale"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "HERSHEY'S Milk Chocolate",
+      "price": 70,
+      "brand": 4,
+      "description": "There’s happy, and then there’s HERSHEY’S Happy. These HERSHEY’S Chocolate Bars makes life delicious. Unwrap a bar, break off a piece, savor and repeat.",
+      "images": [
+        "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00240_5_701_24000_097_Item_Front?fmt=png-alpha&hei=1500"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "REESE'S Cups",
+      "price": 70,
+      "brand": 4,
+      "description": "The classic combination of chocolate and peanut butter, REESE'S Peanut Butter Cups are the perfect companion for movies, sports and parties.",
+      "images": [
+        "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00440_9_701_44000_136_Item_Front?fmt=png-alpha&hei=3000"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "KIT KAT®",
+      "price": 70,
+      "brand": 4,
+      "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
+      "images": [
+        "http://s7d2.scene7.com/is/image/hersheysassets/0_34000_00246_7_701_24600_070_Item_Front?fmt=png-alpha&hei=1500"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Strawberry",
+      "price": 70,
+      "brand": 5,
+      "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
+      "images": [
+        "https://thenovicechefblog.com/wp-content/uploads/2020/05/Air-Fryer-Donuts-1-720x720.jpeg"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Blueberry",
+      "price": 70,
+      "brand": 5,
+      "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
+      "images": [
+        "https://dunkindonutsmoscow.ru/upload/iblock/0e7/5.png"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Banana",
+      "price": 70,
+      "brand": 5,
+      "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
+      "images": [
+        "https://dunkindonutsmoscow.ru/upload/iblock/ab0/1.png"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Cherry",
+      "price": 70,
+      "brand": 5,
+      "description": "We're all about those breaks. And the best breaks start with these classic bars of crispy wafers coated in smooth milk chocolate.",
+      "images": [
+        "https://dunkindonutsmoscow.ru/upload/iblock/3ff/SHell-Vishnya-2.0.png"
+      ]
+    }
+  ]
 }

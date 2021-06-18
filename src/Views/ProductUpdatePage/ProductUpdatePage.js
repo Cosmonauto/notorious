@@ -67,8 +67,8 @@ export default function ProductUpdatePage() {
                 >
                     {({ }) => (
                         <Form className={classes.form}>
-                            <Typography variant="h4">Изменение продукта</Typography>
-                            <label>Название</label>
+                            <Typography variant="h4">Change the details of the product</Typography>
+                            <label>Name</label>
                             <Field
                                 className={classes.input}
                                 name="title"
@@ -78,7 +78,7 @@ export default function ProductUpdatePage() {
 
                             <ErrorMessage component={TextError} name="title" />
 
-                            <label>Цена</label>
+                            <label>Price</label>
                             <Field
                                 className={classes.input}
                                 name="price"
@@ -87,7 +87,7 @@ export default function ProductUpdatePage() {
                             />
                             <ErrorMessage component={TextError} name="price" />
 
-                            <label>Описание</label>
+                            <label>Details</label>
                             <Field
                                 variant="outlined"
                                 className={classes.input}
@@ -98,7 +98,7 @@ export default function ProductUpdatePage() {
                             />
                             <ErrorMessage component={TextError} name="description" />
 
-                            <label>Изображение</label>
+                            <label>Image(s) of the Product</label>
                             <Field
                                 className={classes.input}
                                 name="images"
@@ -108,7 +108,7 @@ export default function ProductUpdatePage() {
                             <ErrorMessage component={TextError} name="images" />
 
                             <Button type="submit" color="primary" variant="contained">
-                                Изменить
+                                Change
                             </Button>
                         </Form>
                     )}

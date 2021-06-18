@@ -7,6 +7,7 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     marginTop: "50px",
+    textDecoration: "none",
   },
 }));
 

@@ -51,8 +51,8 @@ export default function ProductCreatePage() {
                 >
                     {({ values }) => (
                         <Form className={classes.form}>
-                            <Typography variant="h4">Создание продукта</Typography>
-                            <label>Название</label>
+                            <Typography variant="h4">Create a Product</Typography>
+                            <label>Product Name</label>
                             <Field
                                 className={classes.input}
                                 name="title"
@@ -62,7 +62,7 @@ export default function ProductCreatePage() {
 
                             <ErrorMessage component={TextError} name="title" />
 
-                            <label>Цена</label>
+                            <label>Price</label>
                             <Field
                                 className={classes.input}
                                 name="price"
@@ -71,7 +71,7 @@ export default function ProductCreatePage() {
                             />
                             <ErrorMessage component={TextError} name="price" />
 
-                            <label>Описание</label>
+                            <label>Details</label>
                             <Field
                                 variant="outlined"
                                 className={classes.input}
@@ -82,7 +82,7 @@ export default function ProductCreatePage() {
                             />
                             <ErrorMessage component={TextError} name="description" />
 
-                            <label>Изображение</label>
+                            <label>Image(s)</label>
                             <Field
                                 className={classes.input}
                                 name="images"
@@ -92,7 +92,7 @@ export default function ProductCreatePage() {
                             <ErrorMessage component={TextError} name="images" />
 
                             <Button type="submit" color="primary" variant="contained">
-                                Создать
+                                Create
                             </Button>
                         </Form>
                     )}
