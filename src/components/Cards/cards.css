@@ -34,7 +34,7 @@
   animation-duration: 2s;
 }
 
-.cards__item__pic-wrap::after {
+/* .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -46,7 +46,7 @@
   color: #fff;
   background-color: #7d32d3;
   box-sizing: border-box;
-}
+} */
 
 .cards__item__img {
   position: absolute;
@@ -57,7 +57,7 @@
   display: block;
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 300px;
   max-height: 100%;
   object-fit: contain;
   transition: all 0.2s linear;
